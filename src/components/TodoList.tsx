@@ -1,6 +1,6 @@
-import { TodoItem } from "./TodoItem";
+import  TodoItem  from "./TodoItem";
 
-export default TodoList({todos, toggleTodo, deleteToDo}){
+export default function TodoList({todos, toggleTodo, deleteToDo}){
 
     return (
     <ul className="list">

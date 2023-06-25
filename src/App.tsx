@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
-import { NewTodoForm } from "./components/NewTodoForm";
+import  NewTodoForm  from "./components/NewTodoForm";
 import TodoList from "./components/TodoList";
 
 function App() {
