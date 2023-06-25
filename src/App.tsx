@@ -55,6 +55,7 @@ function App() {
       </form>
       <h1 className="header">Todo List</h1>
       <ul className="list">
+        {todos.length === 0 && "No todos found"}
         {todos.map(todo => {
           return (
             <li key={todo.id}>
@@ -65,7 +66,11 @@ function App() {
                 />
                 {todo.title}
               </label>
-              <button className="btn btn-danger">Delete</button>
+              <button className="btn btn-danger"
+                onClick={()=>deleteToDo(todo.id)}
+              >
+                Delete
+              </button>
             </li>
           )
         })}
